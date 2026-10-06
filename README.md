@@ -1,4 +1,4 @@
-# heynicetattoo
+# Remarkable Bodies
 
 A QR-code-driven flow for collecting tattoo photos, the audio story behind them,
 and (optionally) contact details for follow-up — plus a small internal tool for
@@ -39,6 +39,15 @@ SleeveNotes. Edit the HTML files directly and refresh.
    public sign-up screen — `admin.html` is sign-in only). Anyone you create
    an account for can review *every* submission, so only create accounts for
    people you trust with that.
+
+**Adding the city question to an existing project.** A project set up before
+the "Which city are you in?" screen existed needs one more column. Run this
+in the SQL editor *before* deploying the updated `index.html`, otherwise
+submissions will fail:
+
+```sql
+alter table public.submissions add column if not exists city text;
+```
 
 ## Running it locally
 

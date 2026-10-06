@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>heynicetattoo</title>
+<title>Remarkable Bodies</title>
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Work+Sans:wght@400;500;600;700&display=swap">
 <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
@@ -239,7 +239,7 @@
         <path d="M4 8.5C4 7.67 4.67 7 5.5 7H8l1.2-1.8c.2-.3.5-.5.9-.5h4.8c.4 0 .7.2.9.5L17 7h2.5c.83 0 1.5.67 1.5 1.5v9c0 .83-.67 1.5-1.5 1.5h-15C3.67 19 3 18.33 3 17.5v-9z"/>
         <circle cx="12" cy="13" r="3.4"/>
       </svg>
-      <span>@heynicetattoo</span>
+      <span>@remarkablebodies</span>
     </div>
     <div class="divider">
       <svg width="40" height="12" viewBox="0 0 40 12" fill="none">
@@ -249,7 +249,7 @@
     </div>
     <div class="spacer-sm"></div>
     <div class="headline serif" style="font-size:34px;">Ink tells stories</div>
-    <div class="subtext" style="max-width:300px;">@heynicetattoo is a research project on tattoos, and the stories behind where they come from and how they're made.<br><br><b>Do you have one you'd like to share?</b></div>
+    <div class="subtext" style="max-width:300px;">Remarkable Bodies is a research project about tattoos &amp; the lives around them – how they’re made, why we choose them, &amp; the stories they gather along the way.<br><br><b>Got one you'd like to tell me about?</b></div>
     <div class="spacer"></div>
     <button class="btn-primary" id="btn-intro-next">Let's go</button>
   </section>
@@ -261,7 +261,7 @@
         <path d="M4 8.5C4 7.67 4.67 7 5.5 7H8l1.2-1.8c.2-.3.5-.5.9-.5h4.8c.4 0 .7.2.9.5L17 7h2.5c.83 0 1.5.67 1.5 1.5v9c0 .83-.67 1.5-1.5 1.5h-15C3.67 19 3 18.33 3 17.5v-9z"/>
         <circle cx="12" cy="13" r="3.4"/>
       </svg>
-      <span>@heynicetattoo</span>
+      <span>@remarkablebodies</span>
     </div>
     <div class="divider">
       <svg width="40" height="12" viewBox="0 0 40 12" fill="none">
@@ -269,8 +269,8 @@
         <circle cx="20" cy="6" r="2" fill="var(--accent)"/>
       </svg>
     </div>
-    <div class="headline serif">Snap your tat</div>
-    <div class="subtext">First, take a picture of a tattoo that means something to you.</div>
+    <div class="headline serif">Let's see it!</div>
+    <div class="subtext">Take a photo of one you've got a story about.</div>
     <div class="spacer"></div>
 
     <input type="file" accept="image/*" capture="environment" id="photo-input" style="display:none">
@@ -295,8 +295,8 @@
     <div class="spacer"></div>
     <button class="btn-primary" id="btn-photo-next" style="display:none; margin-bottom:20px;">Continue</button>
 
-    <div class="step-dots"><span class="on"></span><span></span><span></span></div>
-    <div class="footnote">Nothing is posted without your OK</div>
+    <div class="step-dots"><span class="on"></span><span></span><span></span><span></span></div>
+    <div class="footnote">(Nothing is posted without your consent.)</div>
   </section>
 
   <!-- Audio -->
@@ -306,7 +306,7 @@
         <path d="M4 8.5C4 7.67 4.67 7 5.5 7H8l1.2-1.8c.2-.3.5-.5.9-.5h4.8c.4 0 .7.2.9.5L17 7h2.5c.83 0 1.5.67 1.5 1.5v9c0 .83-.67 1.5-1.5 1.5h-15C3.67 19 3 18.33 3 17.5v-9z"/>
         <circle cx="12" cy="13" r="3.4"/>
       </svg>
-      <span>@heynicetattoo</span>
+      <span>@remarkablebodies</span>
     </div>
     <div class="divider">
       <svg width="40" height="12" viewBox="0 0 40 12" fill="none">
@@ -314,8 +314,8 @@
         <circle cx="20" cy="6" r="2" fill="var(--accent)"/>
       </svg>
     </div>
-    <div class="headline serif">Tell the story</div>
-    <div class="subtext">What does it mean? How did you get it? Take a minute or two to explain.</div>
+    <div class="headline serif">Tell me the story <br>of your tattoo.</div>
+    <div class="subtext">Start wherever you like</div>
     <div class="spacer"></div>
 
     <div id="audio-unsupported" style="display:none; text-align:center; color:var(--error); font-size:14px; line-height:1.5;">
@@ -329,7 +329,7 @@
           <path d="M5 11a7 7 0 0014 0M12 18v3"/>
         </svg>
       </button>
-      <div class="caption">Tap to record</div>
+      <div class="caption">You can speak&nbsp;any language you wish.</div>
     </div>
 
     <div id="audio-recording-ui" style="display:none;">
@@ -364,7 +364,33 @@
 
     <div class="spacer"></div>
     <button class="btn-primary" id="btn-audio-next" style="display:none; margin-bottom:20px;">Continue</button>
-    <div class="step-dots"><span></span><span class="on"></span><span></span></div>
+    <div class="step-dots"><span></span><span class="on"></span><span></span><span></span></div>
+  </section>
+
+  <!-- City -->
+  <section id="screen-city" class="screen">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 8.5C4 7.67 4.67 7 5.5 7H8l1.2-1.8c.2-.3.5-.5.9-.5h4.8c.4 0 .7.2.9.5L17 7h2.5c.83 0 1.5.67 1.5 1.5v9c0 .83-.67 1.5-1.5 1.5h-15C3.67 19 3 18.33 3 17.5v-9z"/>
+        <circle cx="12" cy="13" r="3.4"/>
+      </svg>
+      <span>@remarkablebodies</span>
+    </div>
+    <div class="divider">
+      <svg width="40" height="12" viewBox="0 0 40 12" fill="none">
+        <path d="M2 6h14M24 6h14" stroke="var(--accent)" stroke-width="1.5"/>
+        <circle cx="20" cy="6" r="2" fill="var(--accent)"/>
+      </svg>
+    </div>
+    <div class="headline serif">Which city are you in?</div>
+    <form id="city-fields" style="margin-top:36px;" novalidate onsubmit="return false;">
+      <div class="field">
+        <input type="text" id="input-city" name="city" placeholder="e.g. Berlin" aria-label="City" autocomplete="address-level2" style="font-size:16px;">
+      </div>
+    </form>
+    <div class="spacer"></div>
+    <button class="btn-primary" id="btn-city-next" style="margin-bottom:20px;">Continue</button>
+    <div class="step-dots"><span></span><span></span><span class="on"></span><span></span></div>
   </section>
 
   <!-- Contact + consent -->
@@ -374,7 +400,7 @@
         <path d="M4 8.5C4 7.67 4.67 7 5.5 7H8l1.2-1.8c.2-.3.5-.5.9-.5h4.8c.4 0 .7.2.9.5L17 7h2.5c.83 0 1.5.67 1.5 1.5v9c0 .83-.67 1.5-1.5 1.5h-15C3.67 19 3 18.33 3 17.5v-9z"/>
         <circle cx="12" cy="13" r="3.4"/>
       </svg>
-      <span>@heynicetattoo</span>
+      <span>@remarkablebodies</span>
     </div>
     <div class="divider">
       <svg width="40" height="12" viewBox="0 0 40 12" fill="none">
@@ -382,32 +408,8 @@
         <circle cx="20" cy="6" r="2" fill="var(--accent)"/>
       </svg>
     </div>
-    <div class="headline serif" style="font-size:26px;">One last thing</div>
-    <div class="subtext" style="margin-top:10px;">Please leave at least one <br>contact detail.</div>
-
-    <form id="contact-fields" style="margin-top:22px;" novalidate onsubmit="return false;">
-      <div class="field">
-        <label for="input-phone">Phone number</label>
-        <input type="tel" id="input-phone" name="tel" placeholder="(555) 012-3456" autocomplete="tel">
-      </div>
-      <div class="field">
-        <label for="input-email">Email</label>
-        <input type="email" id="input-email" name="email" placeholder="you@email.com" autocomplete="email">
-      </div>
-      <div class="field" style="margin-bottom:0;">
-        <label for="input-instagram">Instagram</label>
-        <input type="text" id="input-instagram" name="instagram" placeholder="@yourhandle" autocomplete="off">
-      </div>
-      <div class="field-hint">At least one is required.</div>
-      <div class="field-error" id="contact-error">Please leave at least one contact detail so we can reach you.</div>
-    </form>
-
-    <div class="field" style="margin-top:18px;">
-      <label for="input-location">Where did you find this sticker?</label>
-      <input type="text" id="input-location" name="sticker-location" placeholder="A bar? A friend? Somewhere else?" autocomplete="off">
-    </div>
-
-    <div class="consent-label">If we love it, can we share it?</div>
+    <div class="headline serif" style="font-size:26px;">One last thing!</div>
+    <div class="consent-label" style="margin-top:24px;">If we love it, can we share it?</div>
     <div role="radiogroup" aria-label="Sharing preference">
       <label class="consent-option selected" id="consent-private-label">
         <input type="radio" name="consent" value="private" id="consent-private" checked>
@@ -426,16 +428,39 @@
           <path d="M12 3l1.8 5.4L19 10l-5.2 1.6L12 17l-1.8-5.4L5 10l5.2-1.6z"/>
         </svg>
         <div>
-          <div class="title">I'm interested in featuring</div>
+          <div class="title">I'm interested in sharing it</div>
           <div class="desc">I'll reach out to you about posting your story – no pressure either way.</div>
         </div>
       </label>
     </div>
 
+    <div class="subtext" style="margin-top:28px;">Leave any one of these.</div>
+
+    <form id="contact-fields" style="margin-top:16px;" novalidate onsubmit="return false;">
+      <div class="field">
+        <label for="input-phone">Phone number</label>
+        <input type="tel" id="input-phone" name="tel" placeholder="(555) 012-3456" autocomplete="tel">
+      </div>
+      <div class="field">
+        <label for="input-email">Email</label>
+        <input type="email" id="input-email" name="email" placeholder="you@email.com" autocomplete="email">
+      </div>
+      <div class="field" style="margin-bottom:0;">
+        <label for="input-instagram">Instagram</label>
+        <input type="text" id="input-instagram" name="instagram" placeholder="@yourhandle" autocomplete="off">
+      </div>
+      <div class="field-error" id="contact-error">Please leave at least one contact detail so we can reach you.</div>
+    </form>
+
+    <div class="field" style="margin-top:18px;">
+      <label for="input-location">Where did you find this?</label>
+      <input type="text" id="input-location" name="sticker-location" placeholder="A bar? A studio? A friend? Somewhere else?" autocomplete="off">
+    </div>
+
     <div class="spacer"></div>
     <button class="btn-primary" id="btn-submit">Share my story</button>
     <div class="submit-error" id="submit-error"></div>
-    <div class="step-dots" style="margin-top:16px;"><span></span><span></span><span class="on"></span></div>
+    <div class="step-dots" style="margin-top:16px;"><span></span><span></span><span></span><span class="on"></span></div>
   </section>
 
   <!-- Thank you -->
@@ -451,7 +476,7 @@
         </svg>
       </div>
       <div class="headline serif" style="margin-top:0; font-size:30px;">Thanks for sharing!</div>
-      <div class="subtext" style="max-width:260px;">Check out my project <span style="color:var(--accent); font-weight:600;">@heynicetattoo</span></div>
+      <div class="subtext" style="max-width:260px;">Let's keep in touch! &lt;3<br><span style="color:var(--accent); font-weight:600;">@remarkablebodies</span></div>
     </div>
   </section>
 </div>
@@ -469,7 +494,7 @@
   }
 
   // ---- Screen navigation ----
-  const screens = ['screen-intro', 'screen-photo', 'screen-audio', 'screen-contact', 'screen-thanks'];
+  const screens = ['screen-intro', 'screen-photo', 'screen-audio', 'screen-city', 'screen-contact', 'screen-thanks'];
   function goTo(id) {
     screens.forEach(s => document.getElementById(s).classList.toggle('active', s === id));
     window.scrollTo(0, 0);
@@ -619,7 +644,10 @@
     playIcon.innerHTML = '<path d="M8 5v14l11-7z"/>';
   }
 
-  btnAudioNext.addEventListener('click', () => goTo('screen-contact'));
+  btnAudioNext.addEventListener('click', () => goTo('screen-city'));
+
+  // ---- City ----
+  document.getElementById('btn-city-next').addEventListener('click', () => goTo('screen-contact'));
 
   // ---- Contact + consent ----
   const consentPrivateLabel = document.getElementById('consent-private-label');
@@ -649,6 +677,7 @@
     const email = document.getElementById('input-email').value.trim();
     const instagram = document.getElementById('input-instagram').value.trim();
     const stickerLocation = document.getElementById('input-location').value.trim();
+    const city = document.getElementById('input-city').value.trim();
     submitError.classList.remove('show');
     contactError.classList.remove('show');
 
@@ -692,6 +721,7 @@
         email: email || null,
         instagram: instagram || null,
         found_location: stickerLocation || null,
+        city: city || null,
         consent: consentFeature.checked ? 'feature' : 'private',
       }]);
       if (insertErr) throw insertErr;

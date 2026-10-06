@@ -1,4 +1,4 @@
--- heynicetattoo — Supabase schema, storage, and RLS setup.
+-- Remarkable Bodies — Supabase schema, storage, and RLS setup.
 -- Run this once, in full, in your Supabase project's SQL editor
 -- (Dashboard → SQL Editor → New query) for a fresh project.
 
@@ -13,6 +13,7 @@ create table if not exists public.submissions (
   email text,
   instagram text,
   found_location text,
+  city text,
   transcript text,
   transcript_en text,
   consent text not null check (consent in ('private', 'feature')),

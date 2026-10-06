@@ -1,4 +1,4 @@
-// heynicetattoo — on-demand story transcription + translation.
+// Remarkable Bodies — on-demand story transcription + translation.
 //
 // Called directly from admin.html when a reviewer clicks "Transcribe &
 // translate" on a submission (supabaseClient.functions.invoke). Downloads

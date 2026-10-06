@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>heynicetattoo — Review Queue</title>
+<title>Remarkable Bodies — Review Queue</title>
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap">
 <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
@@ -124,7 +124,7 @@
   <section id="view-login" class="view active">
     <div class="card">
       <h1>Review Queue</h1>
-      <p>Sign in with your heynicetattoo admin account.</p>
+      <p>Sign in with your Remarkable Bodies admin account.</p>
       <form id="login-form" novalidate onsubmit="return false;">
         <div class="field">
           <label for="login-email">Email</label>
@@ -409,6 +409,9 @@
     if (row.instagram) {
       const handle = row.instagram.replace(/^@/, '');
       contactRows.push(`<div class="contact-row"><a class="val" href="https://instagram.com/${escapeAttr(handle)}" target="_blank" rel="noopener">${escapeHtml(row.instagram)}</a><button class="copy-btn" data-copy="${escapeAttr(row.instagram)}">Copy</button></div>`);
+    }
+    if (row.city) {
+      contactRows.push(`<div class="contact-row"><span class="val" style="color:var(--muted); font-size:12px;">City</span><span class="val" style="flex:2; text-align:right;">${escapeHtml(row.city)}</span></div>`);
     }
     if (row.found_location) {
       contactRows.push(`<div class="contact-row"><span class="val" style="color:var(--muted); font-size:12px;">Found via</span><span class="val" style="flex:2; text-align:right;">${escapeHtml(row.found_location)}</span></div>`);

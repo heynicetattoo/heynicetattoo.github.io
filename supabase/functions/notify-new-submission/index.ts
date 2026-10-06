@@ -1,4 +1,4 @@
-// heynicetattoo — new-submission email notification.
+// Remarkable Bodies — new-submission email notification.
 //
 // Fired by a Supabase Database Webhook on INSERT into public.submissions.
 // Sends a plain notice (no personal details) to a fixed address, pointing
@@ -25,9 +25,9 @@ Deno.serve(async (req) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "heynicetattoo <onboarding@resend.dev>",
+        from: "Remarkable Bodies <onboarding@resend.dev>",
         to: NOTIFY_EMAIL,
-        subject: "New heynicetattoo submission",
+        subject: "New Remarkable Bodies submission",
         text: `A new story just came in.\n\nConsent: ${consent}\nSubmitted: ${submittedAt}\n\nReview it here: ${ADMIN_URL}`,
       }),
     });
